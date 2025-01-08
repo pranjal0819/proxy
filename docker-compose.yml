@@ -1,0 +1,19 @@
+# this is the docker compose file for local development when user runs below command
+# docker-compose up -d
+
+services:
+  proxy-web:
+    container_name: proxy-web
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=true
+      - SECRET_KEY="django-insecure-x9x*hl2v(%3bn2vkf+#nj8#1z9!aj#_ht@2v%q=9#*6e+2l5cw"
+    networks:
+      - infinity_network
+
+networks:
+  infinity_network:
+    driver: bridge

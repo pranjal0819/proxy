@@ -1,0 +1,52 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+venv/
+env/
+*.venv
+
+# Ignore build artifacts and distribution files
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Ignore configuration files
+*.env
+*.json
+*.yml
+
+# Ignore test and development files
+tests/
+*.pytest_cache/
+coverage.xml
+nosetests.xml
+*.log
+
+# Ignore Dockerfile and other Docker-related files if needed
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Ignore other unnecessary files
+.DS_Store
+.env.template
+.pre-commit-config.yaml
+pyproject.toml
+*.md
+
+.git
+.github
+.gitignore
